@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Libro {
     private int id, fechaPublicacion;
-    private String isbn, titulo, editorial, editor;
-
+    private String isbn, titulo, editorial, editor, autor;
 
 }
+
