@@ -1,4 +1,4 @@
-package controller;
+package com.example.BibliotecaDuoc.controller;
 
 import java.util.List;
 
