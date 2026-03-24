@@ -1,6 +1,5 @@
 package com.example.BibliotecaDuoc.repository;
 
-import org.springframework.beans.factory.ListableBeanFactory;
 import org.springframework.stereotype.Repository;
 import java.util.List;
 import java.util.ArrayList; 
@@ -14,7 +13,6 @@ public class LibroRepository {
     public List<Libro> obtenerLibro(){
         return listaLibros;
     }
-
 
     public Libro buscarPorId(int id){
         for (Libro libro : listaLibros){
