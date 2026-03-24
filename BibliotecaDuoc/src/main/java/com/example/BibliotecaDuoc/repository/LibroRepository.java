@@ -9,7 +9,7 @@ import java.util.ArrayList;
 @Repository
 public class LibroRepository {
 
-    private List<Libro>  listaLibros = new ArrayList<>();
+    private List<Libro> listaLibros = new ArrayList<>();
 
     public List<Libro> obtenerLibro(){
         return listaLibros;
@@ -24,7 +24,7 @@ public class LibroRepository {
         return null;
     }
 
-    public Libro buscarPorIdbn(String isbn){
+    public Libro buscarPorIsbn(String isbn){
         for (Libro libro: listaLibros) {
             if (libro.getIsbn().equals(isbn)){
                 return libro;

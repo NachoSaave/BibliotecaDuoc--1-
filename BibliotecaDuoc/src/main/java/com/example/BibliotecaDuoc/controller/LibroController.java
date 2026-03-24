@@ -23,8 +23,8 @@ public class LibroController {
     private LibroService libroService;
 
     @GetMapping
-    public List<Libro> listaLibros(){
-        return libroService.getLibro();
+    public List<Libro> listaLibro(){
+        return libroService.getLibros();
     }
 
     @PostMapping
@@ -34,7 +34,7 @@ public class LibroController {
 
     @GetMapping("{id}")
     public Libro buscarLibro(@PathVariable int id){
-        return libroService.getLibroID(id);
+        return libroService.getLibroId(id);
     }
 
     @PutMapping("{id}")

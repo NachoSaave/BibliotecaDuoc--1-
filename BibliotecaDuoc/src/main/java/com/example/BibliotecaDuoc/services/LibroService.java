@@ -14,7 +14,7 @@ public class LibroService {
     @Autowired
     private LibroRepository libroRepository;
     
-    public List<Libro> getLibro(){
+    public List<Libro> getLibros(){
         return libroRepository.obtenerLibro();
     }
 
@@ -22,7 +22,7 @@ public class LibroService {
         return libroRepository.guardar(libro);
     }    
 
-    public Libro getLibroID(int id){
+    public Libro getLibroId(int id){
         return libroRepository.buscarPorId(id);
     }
 
